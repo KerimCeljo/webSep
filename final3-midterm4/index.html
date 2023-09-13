@@ -169,6 +169,16 @@
      * 10 points
      */
 
+     fetch('IP2LOCATION.json')
+  .then(response => response.json())
+  .then(data => {
+
+    console.log(data); 
+  })
+  .catch(error => {
+    console.error('Error loading data:', error);
+  });
+
     /*TODO #2
      * Create select dropdown and load unique countries from file within it
      * -> unique means that one country appears only once
